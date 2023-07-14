@@ -1,19 +1,18 @@
-#include<stdio.h>
+#include <stdio.h>
+
 /**
- * main -Entry point
- *
- * Return: Always 0 (success)
- */
+* main - Entry point
+*
+* Return: returns 0 when everything works fine
+*
+*/
 
 int main(void)
 {
-	char c;
+	int n;
 
-	c = 'a';
-	while (c <= 'z') {
-		putchar(c);
-		c++;
-	}
-	putchar('\n');
+	for (n = 97; n <= 122; ++n)
+		putchar(n);
+	putchar(10);
 	return (0);
 }
